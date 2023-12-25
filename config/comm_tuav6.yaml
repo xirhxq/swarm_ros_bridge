@@ -1,5 +1,3 @@
-
-
 ### list all <IPname: IP> here (IPname can be set arbitrarily) ###
 IP:
   self: '*'   # '*' stands for all self IPs
@@ -14,7 +12,6 @@ IP:
 ####### Send these ROS messages to remote robots #######
 ## if no send_topics needed, comment all these out
 send_topics:
-  
 - topic_name: /tuav6/single_task_finish
   msg_type: std_msgs/Int8
   max_freq: 50
@@ -33,11 +30,6 @@ recv_topics:
   msg_type: geometry_msgs/Vector3
   srcIP: usv
   srcPort: 1103
-
-- topic_name: /usv/usvarm_detect
-  msg_type: std_msgs/Int8
-  srcIP: usv
-  srcPort: 1102
   
 - topic_name: /usv/compass
   msg_type: sensor_msgs/Imu
