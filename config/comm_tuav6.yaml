@@ -16,7 +16,7 @@ send_topics:
 
 - topic_name: /tuav6/state
   msg_type: std_msgs/String
-  max_freq: 20
+  max_freq: 2
   srcIP: self
   srcPort: 10010
   
@@ -27,11 +27,6 @@ send_topics:
   srcPort: 6666
 
 recv_topics:
-
-- topic_name: /usv/smallbox_pos
-  msg_type: geometry_msgs/Vector3
-  srcIP: usv
-  srcPort: 1103
   
 - topic_name: /usv/compass
   msg_type: sensor_msgs/Imu
@@ -48,35 +43,10 @@ recv_topics:
   srcIP: suav
   srcPort: 10010
 
-- topic_name: /tuav1/state
-  msg_type: std_msgs/String
-  srcIP: tuav1
-  srcPort: 10010
-
-- topic_name: /tuav2/state
-  msg_type: std_msgs/String
-  srcIP: tuav2
-  srcPort: 10010
-
-- topic_name: /tuav3/state
-  msg_type: std_msgs/String
-  srcIP: tuav3
-  srcPort: 10010
-  
-- topic_name: /tuav8/state
-  msg_type: std_msgs/String
-  srcIP: tuav8
-  srcPort: 10010
-
 - topic_name: /usv/state
   msg_type: std_msgs/String
   srcIP: usv
   srcPort: 10010
-  
-- topic_name: /tuav_takeoff_flag
-  msg_type: std_msgs/Int8
-  srcIP: usv 
-  srcPort: 1102
   
 - topic_name: /target_lidar_position
   msg_type: geometry_msgs/Pose2D
