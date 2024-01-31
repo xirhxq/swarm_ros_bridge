@@ -109,6 +109,11 @@ recv_topics:
   srcIP: usv
   srcPort: 10010
   
+- topic_name: /tuav6/largebox_pos
+  msg_type: geometry_msgs/Pose2D
+  srcIP: tuav6
+  srcPort: 6666
+  
 - topic_name: /tuav8/largebox_pos
   msg_type: geometry_msgs/Pose2D
   srcIP: tuav8
