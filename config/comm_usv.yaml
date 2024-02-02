@@ -33,7 +33,7 @@ send_topics:
 
 - topic_name: /usv/state
   msg_type: std_msgs/String
-  max_freq: 20
+  max_freq: 2
   srcIP: self
   srcPort: 10010
 
