@@ -3,6 +3,8 @@
   <arg name="name" default="" />
   <arg name="auto_respawn" default="false" />
   <arg name="force_respawn" default="false" />
+  <arg name="rec_bag" default="true" />
+  <arg name="record" default="false" />
   <arg name="loop_time" default="5.0"/>
   <node pkg="swarm_ros_bridge" type="bridge_node" name="swarm_bridge_node" output="screen" respawn="true">
     <rosparam command="load" file="$(find swarm_ros_bridge)/config/comm_$(arg name).yaml" />
@@ -16,4 +18,9 @@
       <rosparam command="load" file="$(find swarm_ros_bridge)/config/all_names.yaml" />
     </node>
   </group>
+  <group if="$(arg rec_bag)">
+      <node pkg="rosbag" type="record" name="$(arg name)_record_bag" args=" /suav/state /tuav2/state /tuav3/state /tuav6/state  /tuav8/state /usv/state /whichToStream -o $(arg name)_swarm_state.bag"/>
+  </group>
+          
+
 </launch>

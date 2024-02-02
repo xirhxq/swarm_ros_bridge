@@ -20,6 +20,11 @@ recv_topics:
   srcIP: suav
   srcPort: 10010
 
+- topic_name: /usv/state
+  msg_type: std_msgs/String
+  srcIP: usv
+  srcPort: 10010
+
 - topic_name: /tuav6/state
   msg_type: std_msgs/String
   srcIP: tuav6
