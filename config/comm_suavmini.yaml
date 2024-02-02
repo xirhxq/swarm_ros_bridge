@@ -18,3 +18,9 @@ send_topics:
   max_freq: 20
   srcIP: self
   srcPort: 2201
+
+- topic_name: /suavmini/state
+  msg_type: std_msgs/String
+  max_freq: 20
+  srcIP: self
+  srcPort: 10010
