@@ -78,7 +78,7 @@ recv_topics:
   srcIP: usv
   srcPort: 10010
 
-- topic_name: /suav/pod/usvPos
+- topic_name: /suavmini/pod/usvPos
   msg_type: geometry_msgs/Vector3
   srcIP: suavmini
   srcPort: 2201
