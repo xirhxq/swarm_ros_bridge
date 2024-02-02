@@ -13,7 +13,7 @@ IP:
   local: 127.0.0.1
 
 send_topics:
-- topic_name: /suav/usvPos
+- topic_name: /suav/pod/usvPos
   msg_type: geometry_msgs/Vector3
   max_freq: 20
   srcIP: self
