@@ -77,3 +77,8 @@ recv_topics:
   msg_type: std_msgs/String
   srcIP: usv
   srcPort: 10010
+
+- topic_name: /suavmini/usvPos
+  msg_type: geometry_msgs/Vector3
+  srcIP: suavmini
+  srcPort: 2201
