@@ -1,0 +1,12 @@
+IP:
+  self: '*'
+  gs: 192.168.2.101
+  uav1: 192.168.2.102
+  uav2: 192.168.2.103
+  local: 127.0.0.1
+
+recv_topics:
+- topic_name: /uav3/mavros/vision_pose/pose
+  msg_type: geometry_msgs/PoseStamped
+  srcIP: gs
+  srcPort: 1103
