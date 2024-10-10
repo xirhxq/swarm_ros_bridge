@@ -22,6 +22,11 @@ send_topics:
   max_freq: 100
   srcIP: self
   srcPort: 1103
+- topic_name: /uav_2/velocity_local
+  msg_type: geometry_msgs/TwistStamped
+  max_freq: 100
+  srcIP: self
+  srcPort: 1104
 
 recv_topics:
 - topic_name: /uav_1/state
