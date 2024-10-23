@@ -54,6 +54,5 @@ recv_topics:
   srcPort: 1103
 - topic_name: /uav_2/velocity_local
   msg_type: geometry_msgs/TwistStamped
-  max_freq: 100
   srcIP: uav2
   srcPort: 1104
