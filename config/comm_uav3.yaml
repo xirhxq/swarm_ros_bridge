@@ -36,6 +36,10 @@ recv_topics:
   msg_type: geometry_msgs/PoseStamped
   srcIP: uav1
   srcPort: 1103
+- topic_name: /uav_1/velocity_local
+  msg_type: geometry_msgs/TwistStamped
+  srcIP: uav1
+  srcPort: 1104
 - topic_name: /uav_2/state
   msg_type: std_msgs/Int8
   srcIP: uav2
@@ -48,3 +52,8 @@ recv_topics:
   msg_type: geometry_msgs/PoseStamped
   srcIP: uav2
   srcPort: 1103
+- topic_name: /uav_2/velocity_local
+  msg_type: geometry_msgs/TwistStamped
+  max_freq: 100
+  srcIP: uav2
+  srcPort: 1104
