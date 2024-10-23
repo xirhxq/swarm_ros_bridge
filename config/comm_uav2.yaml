@@ -1,12 +1,50 @@
 IP:
   self: '*'
   gs: 192.168.1.123
-  uav1: 192.168.1.11
-  uav2: 192.168.1.11
+  uav1: 192.168.1.21
+  uav2: 192.168.1.22
+  uav2: 192.168.1.23
   local: 127.0.0.1
 
-recv_topics:
-- topic_name: /uav1/mavros/vision_pose/pose
-  msg_type: geometry_msgs/PoseStamped
-  srcIP: gs
+send_topics:
+- topic_name: /uav_2/state
+  msg_type: std_msgs/Int8
+  max_freq: 100
+  srcIP: self
+  srcPort: 1101
+- topic_name: /uav_2/stateFinished
+  msg_type: std_msgs/Bool
+  max_freq: 100
+  srcIP: self
   srcPort: 1102
+- topic_name: /uav_2/pose
+  msg_type: geometry_msgs/PoseStamped
+  max_freq: 100
+  srcIP: self
+  srcPort: 1103
+
+recv_topics:
+- topic_name: /uav_1/state
+  msg_type: std_msgs/Int8
+  srcIP: uav1
+  srcPort: 1101
+- topic_name: /uav_1/stateFinished
+  msg_type: std_msgs/Bool
+  srcIP: uav1
+  srcPort: 1102
+- topic_name: /uav_1/pose
+  msg_type: geometry_msgs/PoseStamped
+  srcIP: uav1
+  srcPort: 1103
+- topic_name: /uav_3/state
+  msg_type: std_msgs/Int8
+  srcIP: uav3
+  srcPort: 1101
+- topic_name: /uav_3/stateFinished
+  msg_type: std_msgs/Bool
+  srcIP: uav3
+  srcPort: 1102
+- topic_name: /uav_3/pose
+  msg_type: geometry_msgs/PoseStamped
+  srcIP: uav3
+  srcPort: 1103

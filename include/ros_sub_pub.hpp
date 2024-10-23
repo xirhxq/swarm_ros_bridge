@@ -49,9 +49,9 @@
 #define MSG_TYPE6 "std_msgs/Float32MultiArray"
 #define MSG_CLASS6 std_msgs::Float32MultiArray
 
-#include <geometry_msgs/Pose2D.h>
-#define MSG_TYPE7 "geometry_msgs/Pose2D"
-#define MSG_CLASS7 geometry_msgs::Pose2D
+#include <std_msgs/Bool.h>
+#define MSG_TYPE7 "std_msgs/Bool"
+#define MSG_CLASS7 std_msgs::Bool
 
 #include <geometry_msgs/PoseStamped.h>
 #define MSG_TYPE8 "geometry_msgs/PoseStamped"
