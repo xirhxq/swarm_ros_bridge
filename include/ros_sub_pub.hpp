@@ -41,9 +41,9 @@
 #define MSG_TYPE4 "geometry_msgs/Vector3"
 #define MSG_CLASS4 geometry_msgs::Vector3
 
-#include <std_msgs/Int8.h>
-#define MSG_TYPE5 "std_msgs/Int8"
-#define MSG_CLASS5 std_msgs::Int8
+#include <std_msgs/UInt8.h>
+#define MSG_TYPE5 "std_msgs/UInt8"
+#define MSG_CLASS5 std_msgs::UInt8
 
 #include <std_msgs/Float32MultiArray.h>
 #define MSG_TYPE6 "std_msgs/Float32MultiArray"

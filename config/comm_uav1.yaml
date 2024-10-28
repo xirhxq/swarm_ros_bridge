@@ -8,7 +8,7 @@ IP:
 
 send_topics:
 - topic_name: /uav_1/state
-  msg_type: std_msgs/Int8
+  msg_type: std_msgs/UInt8
   max_freq: 100
   srcIP: self
   srcPort: 1101
@@ -30,7 +30,7 @@ send_topics:
 
 recv_topics:
 - topic_name: /uav_2/state
-  msg_type: std_msgs/Int8
+  msg_type: std_msgs/UInt8
   srcIP: uav2
   srcPort: 1101
 - topic_name: /uav_2/stateFinished
@@ -46,7 +46,7 @@ recv_topics:
   srcIP: uav2
   srcPort: 1104
 - topic_name: /uav_3/state
-  msg_type: std_msgs/Int8
+  msg_type: std_msgs/UInt8
   srcIP: uav3
   srcPort: 1101
 - topic_name: /uav_3/stateFinished
